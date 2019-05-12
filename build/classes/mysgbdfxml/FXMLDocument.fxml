@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mysgbdfxml.FXMLDocumentController">
+   <children>
+      <Pane fx:id="loginPane" layoutX="7.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="273.0" layoutY="45.0" style="-fx-text-fill: #93AFC3;" text="Authentification">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Pane layoutX="176.0" layoutY="86.0" prefHeight="278.0" prefWidth="349.0" style="-fx-background-color: #504D57; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="60.0" layoutX="47.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="60.0" layoutX="47.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/pass.png" />
+                     </image>
+                  </ImageView>
+                  <TextField layoutX="129.0" layoutY="84.0" promptText="utilisateur" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" />
+                  <PasswordField layoutX="129.0" layoutY="159.0" promptText="mot de passe" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" />
+                  <Button fx:id="btnLogin" layoutX="207.0" layoutY="214.0" mnemonicParsing="false" onAction="#connexion" style="-fx-background-color: #3D8ABE; -fx-border-radius: 30; -fx-background-radius: 30;" text="connexion" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="279.0" layoutY="32.0" style="-fx-text-fill: #93AFC3;" text="mySGBD">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Pane layoutX="58.0" layoutY="161.0" prefHeight="236.0" prefWidth="585.0" style="-fx-background-color: #504D57; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="102.0" layoutY="37.0" style="-fx-text-fill: #93AFC3;" text="Nom de la BD">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="258.0" layoutY="37.0" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" />
+                  <TextField layoutX="258.0" layoutY="84.0" prefHeight="25.0" prefWidth="257.0" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" />
+                  <Label layoutX="102.0" layoutY="90.0" style="-fx-text-fill: #93AFC3;" text="Nombre des tables">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="461.0" layoutY="163.0" mnemonicParsing="false" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" text="creer" />
+                  <Button layoutX="374.0" layoutY="163.0" mnemonicParsing="false" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" text="annuler" />
+               </children>
+            </Pane>
+            <Label layoutX="58.0" layoutY="121.0" style="-fx-text-fill: #93AFC3;" text="creer une base de donnees">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="homePane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="277.0" layoutY="39.0" style="-fx-text-fill: #93AFC3;" text="mySGBD">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+            <Pane layoutX="132.0" layoutY="131.0" prefHeight="188.0" prefWidth="437.0" style="-fx-background-color: #504D57;">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="65.0" layoutX="119.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/add.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="61.0" layoutX="256.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/edit.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="106.0" layoutY="114.0" style="-fx-text-fill: #93AFC3;" text="Ajouter une BD" />
+                  <Label layoutX="258.0" layoutY="114.0" style="-fx-text-fill: #93AFC3;" text="Mes BD" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="25.0" fitWidth="41.0" layoutX="514.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/logout.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="486.0" layoutY="372.0" style="-fx-text-fill: #93AFC3;" text="se deconnecter" />
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="255.0" layoutY="14.0" style="-fx-text-fill: #93AFC3;" text="mySGBD">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Pane layoutX="13.0" layoutY="112.0" prefHeight="278.0" prefWidth="671.0" style="-fx-background-color: #504D57; -fx-background-radius: 10;" />
+            <Label layoutX="22.0" layoutY="75.0" style="-fx-text-fill: #93AFC3;" text="Liste des bases de donnees">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="599.0" layoutY="398.0" mnemonicParsing="false" style="-fx-background-color: #3D8ABE; -fx-background-radius: 30;" text="retour" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
