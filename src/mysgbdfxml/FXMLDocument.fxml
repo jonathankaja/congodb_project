@@ -11,7 +11,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mysgbdfxml.FXMLDocumentController">
    <children>
-      <Pane fx:id="loginPane" layoutX="7.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane fx:id="loginPane" layoutX="7.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="273.0" layoutY="45.0" style="-fx-text-fill: #93AFC3;" text="Authentification">
                <font>
@@ -37,14 +37,14 @@
             </Pane>
          </children>
       </Pane>
-      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="279.0" layoutY="32.0" style="-fx-text-fill: #93AFC3;" text="mySGBD">
                <font>
                   <Font size="25.0" />
                </font>
             </Label>
-            <Pane layoutX="58.0" layoutY="161.0" prefHeight="236.0" prefWidth="585.0" style="-fx-background-color: #504D57; -fx-background-radius: 10;">
+            <Pane layoutX="58.0" layoutY="161.0" prefHeight="236.0" prefWidth="585.0" style="-fx-background-color: #504D57; -fx-background-radius: 10;" visible="false">
                <children>
                   <Label layoutX="102.0" layoutY="37.0" style="-fx-text-fill: #93AFC3;" text="Nom de la BD">
                      <font>
@@ -69,7 +69,7 @@
             </Label>
          </children>
       </Pane>
-      <Pane fx:id="homePane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane fx:id="homePane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="277.0" layoutY="39.0" style="-fx-text-fill: #93AFC3;" text="mySGBD">
                <font>
