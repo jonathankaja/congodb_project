@@ -30,9 +30,9 @@
                         <Image url="@img/pass.png" />
                      </image>
                   </ImageView>
-                  <TextField layoutX="129.0" layoutY="84.0" promptText="utilisateur" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" />
-                  <PasswordField layoutX="129.0" layoutY="159.0" promptText="mot de passe" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" />
-                  <Button fx:id="btnLogin" layoutX="207.0" layoutY="214.0" mnemonicParsing="false" onAction="#connexion" style="-fx-background-color: #3D8ABE; -fx-border-radius: 30; -fx-background-radius: 30;" text="connexion" />
+                  <TextField layoutX="129.0" layoutY="84.0" promptText="utilisateur" style="-fx-background-color: #93AFC3; -fx-background-radius: 10;" />
+                  <PasswordField layoutX="129.0" layoutY="159.0" promptText="mot de passe" style="-fx-background-color: #93AFC3; -fx-background-radius: 10;" />
+                  <Button fx:id="btnLogin" layoutX="207.0" layoutY="214.0" mnemonicParsing="false" onAction="#connexion" style="-fx-background-color: #3D8ABE; -fx-border-radius: 30; -fx-background-radius: 20;" text="connexion" />
                </children>
             </Pane>
          </children>
