@@ -6,6 +6,7 @@
 
 package mysgbdfxml;
 
+import java.awt.event.MouseEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -18,18 +19,18 @@ import javafx.scene.layout.Pane;
  */
 public class FXMLDocumentController implements Initializable {
    
-//    @FXML
-//    private void handleButtonAction(MouseEvent event) {
-//        System.out.println("You clicked me!");
-//
-////        if(event.getTarget() == btnLogin){
-////            System.out.println("login nnnn");
-//////            homePanel.setVisible(true);
-//////            loginPanel.setVisible(false);
-////        }
-//   
+    @FXML
+    private void handleButtonAction(MouseEvent event) {
+        System.out.println("You clicked me!");
+
+        if(event.getTarget() == btnLogin){
+            System.out.println("login nnnn");
+            homePanel.setVisible(true);
+            loginPanel.setVisible(false);
+        }
+   
         
-// }
+ }
     @FXML Pane loginPane = new Pane();
     @FXML Pane homePane = new Pane();
     
