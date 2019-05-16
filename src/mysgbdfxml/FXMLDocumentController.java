@@ -28,9 +28,9 @@ public class FXMLDocumentController implements Initializable {
             homePanel.setVisible(true);
             loginPanel.setVisible(false);
         }
-   
-        
- }
+    }
+    
+    
     @FXML Pane loginPane = new Pane();
     @FXML Pane homePane = new Pane();
     
