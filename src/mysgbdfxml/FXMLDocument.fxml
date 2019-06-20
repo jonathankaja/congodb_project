@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.image.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mysgbdfxml.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mysgbdfxml.FXMLDocumentController">
    <children>
       <Pane fx:id="loginPane" layoutX="7.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -30,14 +31,14 @@
                         <Image url="@img/pass.png" />
                      </image>
                   </ImageView>
-                  <TextField layoutX="129.0" layoutY="84.0" promptText="utilisateur" style="-fx-background-color: #93AFC3; -fx-background-radius: 10;" />
-                  <PasswordField layoutX="129.0" layoutY="159.0" promptText="mot de passe" style="-fx-background-color: #93AFC3; -fx-background-radius: 10;" />
+                  <TextField fx:id="user" layoutX="129.0" layoutY="84.0" promptText="utilisateur" style="-fx-background-color: #93AFC3; -fx-background-radius: 10;" />
+                  <PasswordField fx:id="pwd" layoutX="129.0" layoutY="159.0" promptText="mot de passe" style="-fx-background-color: #93AFC3; -fx-background-radius: 10;" />
                   <Button fx:id="btnLogin" layoutX="207.0" layoutY="214.0" mnemonicParsing="false" onAction="#connexion" style="-fx-background-color: #3D8ABE; -fx-border-radius: 30; -fx-background-radius: 20;" text="connexion" />
                </children>
             </Pane>
          </children>
       </Pane>
-      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane fx:id="add_bd" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="279.0" layoutY="32.0" style="-fx-text-fill: #93AFC3;" text="mySGBD">
                <font>
@@ -58,8 +59,8 @@
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <Button layoutX="461.0" layoutY="163.0" mnemonicParsing="false" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" text="creer" />
-                  <Button layoutX="374.0" layoutY="163.0" mnemonicParsing="false" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" text="annuler" />
+                  <Button layoutX="461.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#creer_in_add_bd" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" text="creer" />
+                  <Button layoutX="374.0" layoutY="163.0" mnemonicParsing="false" onMouseClicked="#retour_in_add_bd" style="-fx-background-color: #93AFC3; -fx-background-radius: 30;" text="annuler" />
                </children>
             </Pane>
             <Label layoutX="58.0" layoutY="121.0" style="-fx-text-fill: #93AFC3;" text="creer une base de donnees">
@@ -78,12 +79,12 @@
             </Label>
             <Pane layoutX="132.0" layoutY="131.0" prefHeight="188.0" prefWidth="437.0" style="-fx-background-color: #504D57;">
                <children>
-                  <ImageView fitHeight="55.0" fitWidth="65.0" layoutX="119.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="btn_newbd" fitHeight="55.0" fitWidth="65.0" layoutX="119.0" layoutY="49.0" onMouseClicked="#new_bd" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@img/add.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="45.0" fitWidth="61.0" layoutX="256.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="btn_mesbd" fitHeight="45.0" fitWidth="61.0" layoutX="256.0" layoutY="59.0" onMouseClicked="#mesbd" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@img/edit.png" />
                      </image>
@@ -92,7 +93,7 @@
                   <Label layoutX="258.0" layoutY="114.0" style="-fx-text-fill: #93AFC3;" text="Mes BD" />
                </children>
             </Pane>
-            <ImageView fitHeight="25.0" fitWidth="41.0" layoutX="514.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="btnDeconnexion" fitHeight="25.0" fitWidth="41.0" layoutX="514.0" layoutY="347.0" onMouseClicked="#deconnexion" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@img/logout.png" />
                </image>
@@ -100,7 +101,7 @@
             <Label layoutX="486.0" layoutY="372.0" style="-fx-text-fill: #93AFC3;" text="se deconnecter" />
          </children>
       </Pane>
-      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane fx:id="mesbd" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #505761;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label layoutX="255.0" layoutY="14.0" style="-fx-text-fill: #93AFC3;" text="mySGBD">
                <font>
@@ -113,7 +114,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button layoutX="599.0" layoutY="398.0" mnemonicParsing="false" style="-fx-background-color: #3D8ABE; -fx-background-radius: 10;" text="retour" />
+            <Button fx:id="mesbd_retour" layoutX="599.0" layoutY="398.0" mnemonicParsing="false" onAction="#mesbd_retour" style="-fx-background-color: #3D8ABE; -fx-background-radius: 10;" text="retour" />
          </children>
       </Pane>
    </children>
