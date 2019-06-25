@@ -1,0 +1,26 @@
+{
+  "nomTable": "professeur",
+  "champs": [
+    {
+      "nom": "id",
+      "type": "int"
+    },
+    {
+      "nom": "nom",
+      "type": "string"
+    },
+    {
+      "nom": "postnom",
+      "type": "string"
+    },
+    {
+      "nom": "prenom",
+      "type": "string"
+    },
+    {
+      "nom": "matricule",
+      "type": "string"
+    }
+  ],
+  "donnees": []
+}

@@ -1,0 +1,26 @@
+{
+  "nomTable": "ma table",
+  "champs": [
+    {
+      "nom": "ch",
+      "type": "ini"
+    },
+    {
+      "nom": "cha",
+      "type": "int"
+    },
+    {
+      "nom": "yuy",
+      "type": "int"
+    },
+    {
+      "nom": "cjks",
+      "type": "iny"
+    },
+    {
+      "nom": "ghlk",
+      "type": "oni"
+    }
+  ],
+  "donnees": []
+}

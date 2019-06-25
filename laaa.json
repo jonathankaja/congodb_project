@@ -1,0 +1,26 @@
+{
+  "nomTable": "prof",
+  "champs": [
+    {
+      "nom": "id",
+      "type": "int"
+    },
+    {
+      "nom": "nom",
+      "type": "str"
+    },
+    {
+      "nom": "post",
+      "type": "str"
+    },
+    {
+      "nom": "pre",
+      "type": "str"
+    },
+    {
+      "nom": "mat",
+      "type": "str"
+    }
+  ],
+  "donnees": []
+}
